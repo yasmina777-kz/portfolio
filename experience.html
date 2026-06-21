@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Experience — Yasmina</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">Yasmina<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+      <li><a href="about.html" data-i18n="nav_about">About</a></li>
+      <li><a href="projects.html" data-i18n="nav_projects">Projects</a></li>
+      <li><a href="experience.html" class="active" data-i18n="nav_experience">Experience</a></li>
+      <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+    </ul>
+    <div class="nav-controls">
+      <button class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+      </button>
+      <div class="lang-switcher">
+        <button class="lang-btn" data-lang="ru">RU</button>
+        <button class="lang-btn" data-lang="kz">KZ</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+    </div>
+    <a href="contact.html" class="nav-cta" data-i18n="nav_cta">Say hello</a>
+    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="container">
+    <span class="section-tag" data-i18n="exp_tag">Experience</span>
+    <h1><span data-i18n="exp_title_1">How I got</span> <em data-i18n="exp_title_2">here.</em></h1>
+    <p data-i18n="exp_lede">Self-directed, project-driven growth — learning backend engineering and AI systems by building something real.</p>
+  </div>
+</header>
+
+<section style="padding-top: 0;">
+  <div class="container">
+    <div class="exp-list">
+
+      <div class="exp-item">
+        <div>
+          <span class="exp-period" data-i18n="exp1_period">2026 — Present</span>
+        </div>
+        <div>
+          <h3 data-i18n="exp1_title">Backend Developer, Chatra</h3>
+          <span class="exp-org" data-i18n="exp1_org">Independent project · Educational platform</span>
+          <p data-i18n="exp1_p1">Designing and building the FastAPI backend for Chatra, an educational platform for classes, assignments, and progress tracking.</p>
+          <p data-i18n="exp1_p2">Currently developing a retrieval-augmented generation (RAG) pipeline to make course content searchable and answerable by an LLM.</p>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div>
+          <span class="exp-period" data-i18n="exp2_period">Ongoing</span>
+        </div>
+        <div>
+          <h3 data-i18n="exp2_title">Self-directed study</h3>
+          <span class="exp-org" data-i18n="exp2_org">Python · FastAPI · RAG · Databases</span>
+          <p data-i18n="exp2_p1">Deepening backend fundamentals — API design, authentication, PostgreSQL schema design, Docker — alongside RAG and retrieval techniques for grounding LLMs in real data.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="margin-top: 70px;">
+      <span class="section-tag" data-i18n="skills_tag">Skills</span>
+      <div class="skill-tags">
+        <span class="chip">Python</span>
+        <span class="chip">FastAPI</span>
+        <span class="chip">RAG / Retrieval</span>
+        <span class="chip">PostgreSQL</span>
+        <span class="chip">Docker</span>
+        <span class="chip">JWT Auth</span>
+        <span class="chip">REST API design</span>
+        <span class="chip">Git</span>
+      </div>
+    </div>
+
+    <div style="margin-top: 70px;">
+      <span class="section-tag" data-i18n="certs_tag">Certificates</span>
+      <div class="cert-grid">
+        <div class="cert-card">
+          <h4 data-i18n="cert1_title">Cybershield 2026</h4>
+          <span data-i18n="cert1_org">Kozybayev University · Republican Hackathon</span><br>
+          <span data-i18n="cert1_date">April 29, 2026</span>
+        </div>
+        <div class="cert-card">
+          <h4 data-i18n="cert2_title">AI-SANA — Phase 2</h4>
+          <span data-i18n="cert2_org">Seeds of Empowerment · 135 hours</span><br>
+          <span data-i18n="cert2_date">Issued June 9, 2026</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="cta-band">
+      <h2 data-i18n="exp_cta_title">Want to build something together?</h2>
+      <p data-i18n="exp_cta_text">I'm open to collaborations and opportunities.</p>
+      <div class="hero-actions">
+        <a href="contact.html" class="btn btn-primary" data-i18n="cta_btn_contact">Get in touch</a>
+        <a href="projects.html" class="btn btn-ghost" data-i18n="cta_btn_work">See my work</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Yasmina<span>.</span></a>
+        <p data-i18n="footer_tagline">Backend & AI engineer based in Kazakhstan, building FastAPI services and RAG-powered systems.</p>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer_portfolio">Portfolio</h4>
+        <a href="index.html" data-i18n="nav_home">Home</a>
+        <a href="about.html" data-i18n="nav_about">About</a>
+        <a href="projects.html" data-i18n="nav_projects">Projects</a>
+        <a href="experience.html" data-i18n="nav_experience">Experience</a>
+        <a href="contact.html" data-i18n="nav_contact">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer_connect">Connect</h4>
+        <a href="mailto:yasmin.yuldasheva@icloud.com" data-i18n="footer_email_link">Email</a>
+        <a href="https://chatra.aican.cloud/" target="_blank" rel="noopener" data-i18n="footer_demo_link">Live Demo</a>
+        <a href="https://github.com/yasmina777-kz">GitHub</a>
+        <a href="https://github.com/yasmina777-kz/chatra-backend" data-i18n="footer_chatra_link">Chatra Backend</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span data-i18n="footer_copyright">Copyright © 2026 Yasmina. All rights reserved.</span>
+      <span data-i18n="footer_built">Built with care.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="i18n.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

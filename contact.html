@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Yasmina</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">Yasmina<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+      <li><a href="about.html" data-i18n="nav_about">About</a></li>
+      <li><a href="projects.html" data-i18n="nav_projects">Projects</a></li>
+      <li><a href="experience.html" data-i18n="nav_experience">Experience</a></li>
+      <li><a href="contact.html" class="active" data-i18n="nav_contact">Contact</a></li>
+    </ul>
+    <div class="nav-controls">
+      <button class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+      </button>
+      <div class="lang-switcher">
+        <button class="lang-btn" data-lang="ru">RU</button>
+        <button class="lang-btn" data-lang="kz">KZ</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+    </div>
+    <a href="contact.html" class="nav-cta" data-i18n="nav_cta">Say hello</a>
+    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="container">
+    <span class="section-tag" data-i18n="contact_tag">Contact</span>
+    <h1><span data-i18n="contact_title_1">Let's talk</span> <em data-i18n="contact_title_2">shop.</em></h1>
+    <p data-i18n="contact_lede">Open to collaborations, opportunities, and interesting backend problems.</p>
+  </div>
+</header>
+
+<section style="padding-top: 0;">
+  <div class="container">
+    <div class="contact-grid">
+      <div>
+        <a href="mailto:yasmin.yuldasheva@icloud.com" class="contact-card">
+          <div class="icon">@</div>
+          <div>
+            <div class="label" data-i18n="contact_email_label">Email</div>
+            <div class="value">yasmin.yuldasheva@icloud.com</div>
+          </div>
+        </a>
+        <a href="https://chatra.aican.cloud/" class="contact-card" target="_blank" rel="noopener">
+          <div class="icon">LD</div>
+          <div>
+            <div class="label" data-i18n="contact_demo_label">Live Demo</div>
+            <div class="value">chatra.aican.cloud</div>
+          </div>
+        </a>
+        <a href="https://github.com/yasmina777-kz" class="contact-card">
+          <div class="icon">GH</div>
+          <div>
+            <div class="label" data-i18n="contact_github_label">GitHub</div>
+            <div class="value">github.com/yasmina777-kz</div>
+          </div>
+        </a>
+        <a href="https://github.com/yasmina777-kz/chatra-backend" class="contact-card">
+          <div class="icon">CH</div>
+          <div>
+            <div class="label" data-i18n="contact_chatra_label">Chatra Backend</div>
+            <div class="value" data-i18n="contact_chatra_value">View the repository</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="contact-note">
+        <h3 data-i18n="contact_note_title">Let's build something.</h3>
+        <p data-i18n="contact_note_p1">The fastest way to reach me is email — I check it regularly and reply personally.</p>
+        <p data-i18n="contact_note_p2">If you've got a project, an opportunity, or just want to talk backend architecture and RAG pipelines — open an issue or drop a star, I'll notice.</p>
+
+        <form class="contact-form" id="contact-form">
+          <div>
+            <label for="cf-name" data-i18n="form_label_name">Name</label>
+            <input type="text" id="cf-name" name="name" placeholder="" required>
+          </div>
+          <div>
+            <label for="cf-email" data-i18n="form_label_email">Email</label>
+            <input type="email" id="cf-email" name="email" placeholder="" required>
+          </div>
+          <div>
+            <label for="cf-message" data-i18n="form_label_message">Message</label>
+            <textarea id="cf-message" name="message" placeholder="" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" data-i18n="form_btn_send">Write to me directly →</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Yasmina<span>.</span></a>
+        <p data-i18n="footer_tagline">Backend & AI engineer based in Kazakhstan, building FastAPI services and RAG-powered systems.</p>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer_portfolio">Portfolio</h4>
+        <a href="index.html" data-i18n="nav_home">Home</a>
+        <a href="about.html" data-i18n="nav_about">About</a>
+        <a href="projects.html" data-i18n="nav_projects">Projects</a>
+        <a href="experience.html" data-i18n="nav_experience">Experience</a>
+        <a href="contact.html" data-i18n="nav_contact">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer_connect">Connect</h4>
+        <a href="mailto:yasmin.yuldasheva@icloud.com" data-i18n="footer_email_link">Email</a>
+        <a href="https://chatra.aican.cloud/" target="_blank" rel="noopener" data-i18n="footer_demo_link">Live Demo</a>
+        <a href="https://github.com/yasmina777-kz">GitHub</a>
+        <a href="https://github.com/yasmina777-kz/chatra-backend" data-i18n="footer_chatra_link">Chatra Backend</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span data-i18n="footer_copyright">Copyright © 2026 Yasmina. All rights reserved.</span>
+      <span data-i18n="footer_built">Built with care.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="i18n.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
