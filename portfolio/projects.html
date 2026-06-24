@@ -38,7 +38,7 @@
   <div class="container">
     <span class="section-tag" data-i18n="proj_tag">Projects</span>
     <h1><span data-i18n="proj_title_1">Work I've</span> <em data-i18n="proj_title_2">built.</em></h1>
-    <p data-i18n="proj_lede">Two projects, two different worlds — a FastAPI backend for a real educational platform, and an AI-powered crypto risk scanner built in a 48-hour hackathon.</p>
+    <p data-i18n="proj_lede">Three projects, three different worlds — a FastAPI backend for a real educational platform, an AI-powered crypto risk scanner built in a 48-hour hackathon, and the very site you're looking at right now.</p>
   </div>
 </header>
 
@@ -47,17 +47,25 @@
 
     <div class="project-block">
       <div class="project-visual">
-        <span class="proj-mark">Chatra</span>
+        <div class="screenshot-pair">
+          <div class="screenshot-wrap screenshot-web">
+            <img src="img/chatra-screenshot.jpg" alt="Chatra — class management interface">
+          </div>
+          <div class="screenshot-wrap screenshot-mobile">
+            <img src="img/chatra-mobile-screenshot.jpg" alt="Chatra mobile app — class list">
+          </div>
+        </div>
       </div>
       <div class="project-info">
         <span class="tag-pill" data-i18n="proj_chatra_tag">Educational Platform · Backend</span>
         <h3 data-i18n="proj_chatra_title">Chatra — FastAPI backend with RAG</h3>
-        <p data-i18n="proj_chatra_text">Chatra is an educational platform where students join classes, submit assignments, and track progress. I'm building the backend that powers it: a FastAPI service designed for clarity and reliability, with a retrieval-augmented pipeline in the works.</p>
+        <p data-i18n="proj_chatra_text">Chatra is an educational platform where students join classes, submit assignments, and track progress, across a web app and a Flutter mobile app built with the team. I'm building the backend that powers it: a FastAPI service designed for clarity and reliability, with a retrieval-augmented pipeline in the works.</p>
         <ul class="feature-list">
           <li data-i18n="proj_feat1">FastAPI REST API with JWT authentication</li>
           <li data-i18n="proj_feat2">PostgreSQL data models for classes, students, and assignments</li>
           <li data-i18n="proj_feat3">Dockerized for consistent, repeatable deployment</li>
           <li data-i18n="proj_feat4">RAG pipeline in progress — to make course content searchable and queryable by an LLM</li>
+          <li data-i18n="proj_feat5">One backend serving both the web app and a Flutter mobile app</li>
         </ul>
         <div class="stack-row">
           <span class="chip">FastAPI</span>
@@ -75,7 +83,9 @@
 
     <div class="project-block reverse">
       <div class="project-visual">
-        <span class="proj-mark">RugPull</span>
+        <div class="screenshot-wrap">
+          <img src="img/rugpull-screenshot.jpg" alt="RugPull — token risk scanner interface">
+        </div>
       </div>
       <div class="project-info">
         <span class="tag-pill" data-i18n="proj_rugpull_tag">Hackathon MVP · Crypto Security</span>
@@ -97,6 +107,32 @@
         <div class="feature-links">
           <a href="https://github.com/whynicky19/RugPull-Frontend" class="btn btn-primary" data-i18n="proj_rugpull_btn_frontend">Frontend on GitHub →</a>
           <a href="https://github.com/whynicky19/RugPull-Backend" class="btn btn-ghost" data-i18n="proj_rugpull_btn_backend">Backend on GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-block">
+      <div class="project-visual">
+        <span class="proj-mark">Yasmina<br><span style="font-size: 0.5em;">.dev</span></span>
+      </div>
+      <div class="project-info">
+        <span class="tag-pill" data-i18n="proj_portfolio_tag">This Site · Frontend</span>
+        <h3 data-i18n="proj_portfolio_title">This portfolio — built from scratch</h3>
+        <p data-i18n="proj_portfolio_text">The site you're looking at right now. A multi-page portfolio with a custom dark/light theme switcher and full RU/KZ/EN localization, built with plain HTML, CSS, and JavaScript — no frameworks, no build step.</p>
+        <ul class="feature-list">
+          <li data-i18n="proj_portfolio_feat1">Theme switcher — dark claret and soft pink, no page reload</li>
+          <li data-i18n="proj_portfolio_feat2">Three languages — Russian, Kazakh, and English, switched instantly via a JS dictionary</li>
+          <li data-i18n="proj_portfolio_feat3">Fully responsive — custom mobile navigation, no UI libraries</li>
+          <li data-i18n="proj_portfolio_feat4">Hosted on GitHub Pages — pure static files, zero backend</li>
+        </ul>
+        <div class="stack-row">
+          <span class="chip">HTML</span>
+          <span class="chip">CSS</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">GitHub Pages</span>
+        </div>
+        <div class="feature-links">
+          <a href="https://github.com/yasmina777-kz/portfolio" class="btn btn-primary" data-i18n="proj_portfolio_btn_github">View on GitHub →</a>
         </div>
       </div>
     </div>

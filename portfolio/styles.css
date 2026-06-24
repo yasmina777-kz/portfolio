@@ -494,6 +494,25 @@ section { padding: 100px 0; position: relative; }
 
 .card.span-2 { grid-column: span 2; }
 
+.rugpull-teaser-card {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.rugpull-teaser-thumb {
+  flex-shrink: 0;
+  width: 160px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border-strong);
+  box-shadow: 0 16px 32px -12px rgba(0,0,0,0.4);
+}
+.rugpull-teaser-thumb img {
+  width: 100%;
+  display: block;
+}
+
 /* ============ FEATURED PROJECT ============ */
 .feature {
   display: grid;
@@ -539,6 +558,29 @@ section { padding: 100px 0; position: relative; }
 .feature-visual .screenshot-wrap img {
   width: 100%;
   display: block;
+}
+
+.screenshot-pair {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+.screenshot-pair .screenshot-web {
+  flex: 1;
+  min-width: 0;
+  margin-bottom: 0;
+}
+.screenshot-pair .screenshot-mobile {
+  flex-shrink: 0;
+  width: 76px;
+  margin-bottom: 0;
+}
+.screenshot-pair .screenshot-mobile img {
+  aspect-ratio: 589 / 1280;
+  object-fit: cover;
 }
 
 .feature-visual .tag-pill {
@@ -806,7 +848,28 @@ footer {
   justify-content: center;
   position: relative;
   overflow: hidden;
-  padding: 40px;
+  padding: 28px;
+}
+.project-visual .screenshot-wrap {
+  position: relative;
+  z-index: 1;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(255,189,197,0.25);
+  box-shadow: 0 24px 48px -16px rgba(0,0,0,0.45);
+  width: 100%;
+}
+.project-visual .screenshot-wrap img {
+  width: 100%;
+  display: block;
+}
+.project-visual .screenshot-pair {
+  width: 100%;
+  margin-bottom: 0;
+}
+.project-visual .screenshot-pair .screenshot-web,
+.project-visual .screenshot-pair .screenshot-mobile {
+  width: auto;
 }
 .project-visual::before {
   content: "";
@@ -1035,4 +1098,5 @@ footer {
   .hero-actions .btn { justify-content: center; }
   section { padding: 64px 0; }
   .cta-band { padding: 56px 28px; }
+  .screenshot-pair .screenshot-mobile { width: 64px; }
 }
