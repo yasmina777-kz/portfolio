@@ -5,13 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Projects — Yasmina</title>
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="enhancements.css">
 </head>
 <body>
+<a class="skip-link" href="#main-content" data-i18n="skip_content">К содержимому</a>
 
 <nav class="navbar">
   <div class="nav-inner">
     <a href="index.html" class="logo">Yasmina<span>.</span></a>
-    <ul class="nav-links">
+    <ul class="nav-links" id="primary-navigation">
       <li><a href="index.html" data-i18n="nav_home">Home</a></li>
       <li><a href="about.html" data-i18n="nav_about">About</a></li>
       <li><a href="projects.html" class="active" data-i18n="nav_projects">Projects</a></li>
@@ -30,28 +32,32 @@
       </div>
     </div>
     <a href="contact.html" class="nav-cta" data-i18n="nav_cta">Say hello</a>
-    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="primary-navigation"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
-<header class="page-header">
+<main id="main-content"><header class="page-header">
   <div class="container">
     <span class="section-tag" data-i18n="proj_tag">Projects</span>
     <h1><span data-i18n="proj_title_1">Work I've</span> <em data-i18n="proj_title_2">built.</em></h1>
     <p data-i18n="proj_lede">Two projects, two different worlds — a FastAPI backend for a real educational platform, and an AI-powered crypto risk scanner built in a 48-hour hackathon.</p>
   </div>
-</header>
+<nav class="project-index container" aria-label="Projects"><a href="#chatra">01 / Chatra</a><a href="#ai-mentor">02 / AI Mentor</a><a href="#rugpull">03 / RugPull</a></nav></header>
 
 <section style="padding-top: 0;">
   <div class="container">
 
-    <div class="project-block">
-      <div class="project-visual">
-        <span class="proj-mark">Chatra</span>
-      </div>
+    <article class="project-block" id="chatra">
+      <figure class="project-media reveal">
+  <a class="project-cover" href="assets/chatra-screen.jpg" data-preview data-preview-title="Chatra">
+    <img src="assets/chatra-cover.jpg" alt="Chatra — обложка на основе настоящего скриншота" data-i18n-attr="alt:chatra_alt" loading="lazy" width="1586" height="992">
+    <span class="image-action" data-i18n="view_screen">Открыть скриншот ↗</span>
+  </a>
+  <figcaption data-i18n="cover_note">AI-обложка из реального скриншота · оригинал по нажатию</figcaption>
+ </figure>
       <div class="project-info">
         <span class="tag-pill" data-i18n="proj_chatra_tag">Educational Platform · Backend</span>
-        <h3 data-i18n="proj_chatra_title">Chatra — FastAPI backend with RAG</h3>
+        <h2 data-i18n="proj_chatra_title">Chatra — FastAPI backend with RAG</h2>
         <p data-i18n="proj_chatra_text">Chatra is an educational platform where students join classes, submit assignments, and track progress. I'm building the backend that powers it: a FastAPI service designed for clarity and reliability, with a retrieval-augmented pipeline in the works.</p>
         <ul class="feature-list">
           <li data-i18n="proj_feat1">FastAPI REST API with JWT authentication</li>
@@ -68,18 +74,46 @@
         </div>
         <div class="feature-links">
           <a href="https://chatra.aican.cloud/" class="btn btn-primary" data-i18n="proj_btn_demo" target="_blank" rel="noopener">Live Demo →</a>
-          <a href="https://github.com/yasmina777-kz/chatra-backend" class="btn btn-ghost" data-i18n="proj_btn_github">View on GitHub</a>
+          <a href="https://github.com/yasmina777-kz/chatra-with-avatar-B" class="btn btn-ghost">Backend ↗</a>
+<a href="https://github.com/yasmina777-kz/chatra-with-avatar-F" class="btn btn-ghost">Frontend ↗</a>
         </div>
       </div>
-    </div>
+    </article>
 
-    <div class="project-block reverse">
-      <div class="project-visual">
-        <span class="proj-mark">RugPull</span>
-      </div>
+<article class="project-block reverse" id="ai-mentor">
+<figure class="project-media reveal">
+  <a class="project-cover" href="assets/mentor-screen.jpg" data-preview data-preview-title="AI Mentor">
+    <img src="assets/mentor-cover.jpg" alt="AI Mentor — обложка на основе настоящего скриншота" data-i18n-attr="alt:ai_mentor_alt" loading="lazy" width="1586" height="992">
+    <span class="image-action" data-i18n="view_screen">Открыть скриншот ↗</span>
+  </a>
+  <figcaption data-i18n="cover_note">AI-обложка из реального скриншота · оригинал по нажатию</figcaption>
+ </figure>
+<div class="project-info reveal">
+<span class="tag-pill" data-i18n="mentor_tag">EdTech · Full-stack · AI</span>
+<h2 data-i18n="mentor_title">AI Mentor — обучение в диалоге</h2>
+<p data-i18n="mentor_text">Интерактивные лекции из документов или темы: слайды, голос преподавателя, вопросы и практика в одном приложении.</p>
+<ul class="feature-list">
+<li data-i18n="mentor_f1">Импорт PDF, DOCX, PPTX и генерация структуры занятия</li>
+<li data-i18n="mentor_f2">Голосовые и текстовые вопросы, заметки и тесты</li>
+<li data-i18n="mentor_f3">Роли, учебные группы, назначение лекций и прогресс</li>
+<li data-i18n="mentor_f4">ASP.NET Core API, EF Core, SQLite / PostgreSQL</li>
+</ul>
+<div class="stack-row"><span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">C#</span><span class="chip">ASP.NET Core</span><span class="chip">EF Core</span></div>
+<div class="feature-links"><a class="btn btn-primary" href="https://github.com/yasmina777-kz/lecturer-app" data-i18n="mentor_code">Код и запуск ↗</a><a class="btn btn-ghost" href="assets/mentor-screen.jpg" data-preview data-preview-title="AI Mentor" data-i18n="view_screen">Открыть скриншот ↗</a></div>
+<p class="project-status" data-i18n="mentor_status">Локальный проект · RU / EN / KZ · AI-функции требуют настройки API</p>
+</div></article>
+
+    <article class="project-block" id="rugpull">
+      <figure class="project-media reveal">
+  <a class="project-cover" href="assets/rugpull-screen.jpg" data-preview data-preview-title="RugPull">
+    <img src="assets/rugpull-cover.jpg" alt="RugPull — обложка на основе настоящего скриншота" data-i18n-attr="alt:rugpull_alt" loading="lazy" width="1586" height="992">
+    <span class="image-action" data-i18n="view_screen">Открыть скриншот ↗</span>
+  </a>
+  <figcaption data-i18n="cover_note">AI-обложка из реального скриншота · оригинал по нажатию</figcaption>
+ </figure>
       <div class="project-info">
         <span class="tag-pill" data-i18n="proj_rugpull_tag">Hackathon MVP · Crypto Security</span>
-        <h3 data-i18n="proj_rugpull_title">RugPull — AI token risk scanner</h3>
+        <h2 data-i18n="proj_rugpull_title">RugPull — AI token risk scanner</h2>
         <p data-i18n="proj_rugpull_text">Built in 48 hours at the Cybershield 2026 hackathon. RugPull scans crypto tokens and wallets for fraud signals — smart contract risks, onchain activity, social mentions, and whale concentration — and returns an AI-generated verdict. Pitched to industry judges, placed Top 5.</p>
         <ul class="feature-list">
           <li data-i18n="proj_rugpull_feat1">Smart contract analysis — mint/blacklist functions, owner privileges, verification status</li>
@@ -99,7 +133,7 @@
           <a href="https://github.com/whynicky19/RugPull-Backend" class="btn btn-ghost" data-i18n="proj_rugpull_btn_backend">Backend on GitHub</a>
         </div>
       </div>
-    </div>
+    </article>
 
   </div>
 </section>
@@ -117,6 +151,7 @@
   </div>
 </section>
 
+</main>
 <footer>
   <div class="container">
     <div class="footer-grid">
@@ -137,7 +172,7 @@
         <a href="mailto:yasmin.yuldasheva@icloud.com" data-i18n="footer_email_link">Email</a>
         <a href="https://chatra.aican.cloud/" target="_blank" rel="noopener" data-i18n="footer_demo_link">Live Demo</a>
         <a href="https://github.com/yasmina777-kz">GitHub</a>
-        <a href="https://github.com/yasmina777-kz/chatra-backend" data-i18n="footer_chatra_link">Chatra Backend</a>
+        <a href="https://github.com/yasmina777-kz/chatra-with-avatar-B" data-i18n="footer_chatra_link">Chatra Backend</a>
       </div>
     </div>
     <div class="footer-bottom">
@@ -148,6 +183,8 @@
 </footer>
 
 <script src="i18n.js"></script>
+<script src="project-content.js"></script>
 <script src="script.js"></script>
+<script src="interactions.js"></script>
 </body>
 </html>

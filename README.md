@@ -38,3 +38,22 @@ Before publishing, check navigation between all five pages, the RU/KZ/EN switche
 ## Related project
 
 [Chatra backend](https://github.com/yasmina777-kz/chatra-with-avatar-B) — an educational platform API built with FastAPI and SQLAlchemy.
+
+## Project gallery and motion
+
+- `project-content.js`: added and updated project copy in RU / KZ / EN.
+- `enhancements.css`: responsive gallery, entrance and hover motion, lightbox styling.
+- `interactions.js`: image dialog, Escape/focus handling, motion preference and mobile navigation accessibility.
+- `assets/`: three optimized project covers and their original screenshots.
+
+Motion respects `prefers-reduced-motion` and can be paused using the footer control. Content remains visible if JavaScript or IntersectionObserver is unavailable. Image links open the original files without JavaScript.
+
+### Image sources
+
+Captured on 2026-10-29 using the actual interfaces:
+
+- Chatra: public landing page at https://chatra.aican.cloud/landing.
+- AI Mentor: landing page running locally from https://github.com/yasmina777-kz/lecturer-app.
+- RugPull: scanner screen running locally from https://github.com/whynicky19/RugPull-Frontend (interface label: TokenScan). No scan results were fabricated.
+
+The `*-cover.jpg` files are decorative AI-generated browser mockups based on these screenshots, created with the built-in image generation tool. `*-screen.jpg` files are unedited captures. The gallery labels the covers and offers the original on click. Project features are described separately from the pictured landing / scanner screens.

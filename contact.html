@@ -5,13 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact — Yasmina</title>
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="enhancements.css">
 </head>
 <body>
+<a class="skip-link" href="#main-content" data-i18n="skip_content">К содержимому</a>
 
 <nav class="navbar">
   <div class="nav-inner">
     <a href="index.html" class="logo">Yasmina<span>.</span></a>
-    <ul class="nav-links">
+    <ul class="nav-links" id="primary-navigation">
       <li><a href="index.html" data-i18n="nav_home">Home</a></li>
       <li><a href="about.html" data-i18n="nav_about">About</a></li>
       <li><a href="projects.html" data-i18n="nav_projects">Projects</a></li>
@@ -30,11 +32,11 @@
       </div>
     </div>
     <a href="contact.html" class="nav-cta" data-i18n="nav_cta">Say hello</a>
-    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="primary-navigation"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
-<header class="page-header">
+<main id="main-content"><header class="page-header">
   <div class="container">
     <span class="section-tag" data-i18n="contact_tag">Contact</span>
     <h1><span data-i18n="contact_title_1">Let's talk</span> <em data-i18n="contact_title_2">shop.</em></h1>
@@ -101,6 +103,7 @@
   </div>
 </section>
 
+</main>
 <footer>
   <div class="container">
     <div class="footer-grid">
@@ -132,6 +135,8 @@
 </footer>
 
 <script src="i18n.js"></script>
+<script src="project-content.js"></script>
 <script src="script.js"></script>
+<script src="interactions.js"></script>
 </body>
 </html>

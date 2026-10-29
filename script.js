@@ -70,6 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     langBtns.forEach(function (btn) {
       btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+      btn.setAttribute('aria-pressed', String(btn.getAttribute('data-lang') === lang));
     });
   }
 

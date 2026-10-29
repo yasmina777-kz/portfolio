@@ -1,0 +1,68 @@
+/* Portfolio motion & real project gallery */
+:root { --ink-dim: #d4bcc3; --ink-faint: #c4a7b1; }
+html[data-theme="light"] { --ink-dim:#6b3c4c; --ink-faint:#795061; }
+:focus-visible { outline: 2px solid var(--accent-text); outline-offset: 5px; }
+.skip-link { position:fixed; top:8px; left:12px; transform:translateY(-180%); z-index:1000; background:var(--ink); color:var(--bg-flat); padding:12px 20px; border-radius:8px; }
+.skip-link:focus { transform:none; }
+main { display:block; }
+.hero { padding-top:80px; padding-bottom:40px; }
+.hero-grid { display:grid; grid-template-columns:1.08fr 1fr; gap:48px; align-items:center; padding-bottom:64px; }
+.hero-grid h1 { font-size:clamp(2.7rem,4.6vw,4.3rem); }
+.hero-grid .hero-actions { margin-bottom:0; }
+.hero-grid .eyebrow { font-size:.68rem; letter-spacing:.04em; }
+.hero-preview { transform:rotate(3deg); }
+.hero-preview a { display:block; border:1px solid var(--border-strong); border-radius:16px; overflow:hidden; background:#211b20; color:#fff3f4; box-shadow:0 25px 60px #0003; transition:transform 250ms ease; }
+.hero-preview a:hover { transform:translateY(-6px) rotate(-2deg); }
+.hero-preview img { width:100%; height:auto; display:block; }
+.hero-preview a>span { display:grid; grid-template-columns:1fr auto; padding:18px 24px; gap:2px 16px; }
+.hero-preview small { grid-column:1; font-size:.7rem; text-transform:uppercase; letter-spacing:.12em; color:#d4bcc3; }
+.hero-preview strong { font-size:1.3rem; font-weight:500; }
+.hero-preview b { grid-column:2; grid-row:1/3; align-self:center; font-size:1.8rem; font-weight:400; }
+.project-index { display:flex; flex-wrap:wrap; gap:8px 28px; margin-top:32px; }
+.project-index a { color:var(--ink-dim); padding:12px 0; border-bottom:1px solid var(--border-strong); transition:color 200ms ease; }
+.project-index a:hover { color:var(--accent-text); }
+.project-block { scroll-margin-top:120px; grid-template-columns:1.1fr 1fr; gap:48px; }
+.project-media { min-width:0; margin:0; }
+.project-cover { display:block; position:relative; border-radius:16px; overflow:hidden; border:1px solid var(--border-strong); background:#241e21; cursor:zoom-in; }
+.project-cover img { width:100%; height:auto; display:block; transition:transform 400ms ease; }
+.project-cover:hover img { transform:scale(1.035); }
+.image-action { position:absolute; bottom:16px; left:16px; background:#1b141be8; border:1px solid #ffffff35; color:#fff; padding:9px 14px; font-size:.75rem; border-radius:30px; }
+.project-media figcaption { font-size:.73rem; color:var(--ink-dim); margin-top:12px; }
+.project-status { font-size:.8rem!important; margin-top:20px; }
+.feature .project-media { align-self:center; }
+.project-directory { padding-top:24px; }
+.project-mini-grid { display:grid; grid-template-columns:repeat(3,1fr); border-top:1px solid var(--border-strong); }
+.project-mini { padding:32px 24px 32px 0; border-bottom:1px solid var(--border-strong); position:relative; color:var(--ink); transition:background 200ms ease; }
+.project-mini+ .project-mini { padding-left:24px; border-left:1px solid var(--border-strong); }
+.project-mini>span { font-size:.72rem; color:var(--ink-dim); }
+.project-mini h3 { font-family:var(--serif); font-size:2rem; margin:14px 0 8px; }
+.project-mini p { color:var(--ink-dim); max-width:90%; }
+.project-mini>b { position:absolute; right:24px; top:30px; font-weight:400; }
+.project-mini:hover { background:var(--surface); }
+.text-link { color:var(--accent-text); text-decoration:underline; text-underline-offset:6px; }
+.reveal { opacity:1; }
+@keyframes reveal-in { from { opacity:0; transform:translateY(22px); } to { opacity:1; transform:translateY(0); } }
+.reveal.is-revealed { animation:reveal-in 500ms cubic-bezier(.2,.65,.25,1) both; }
+html.motion-paused *, html.motion-paused *::before, html.motion-paused *::after { animation:none!important; transition:none!important; scroll-behavior:auto!important; }
+.motion-control { background:transparent; border:1px solid var(--border-strong); color:var(--ink); border-radius:30px; padding:10px 16px; cursor:pointer; font:inherit; font-size:.75rem; }
+.footer-bottom { gap:16px; flex-wrap:wrap; }
+.screenshot-dialog { margin:auto; padding:0; border:1px solid #ffffff40; border-radius:16px; background:#171417; color:#fff; width:min(1160px,94vw); max-height:92dvh; box-shadow:0 20px 100px #0008; }
+.screenshot-dialog::backdrop { background:#080609d9; backdrop-filter:blur(8px); }
+.dialog-bar { display:flex; justify-content:space-between; align-items:center; padding:12px 16px; gap:16px; }
+.dialog-bar button { width:44px; height:44px; border:1px solid #ffffff40; border-radius:50%; background:transparent; color:#fff; font-size:1.6rem; cursor:pointer; }
+.screenshot-dialog img { width:100%; height:auto; display:block; }
+.screenshot-dialog p { padding:12px 20px; color:#d4bcc3; font-size:.8rem; }
+@media(hover:none) { .project-cover:hover img { transform:none; } }
+@media(max-width:920px) { .hero-grid { grid-template-columns:1fr; gap:36px; } .hero-copy { max-width:680px; } .hero-preview { max-width:620px; width:100%; transform:none; } .project-block { grid-template-columns:1fr; } .project-mini-grid { grid-template-columns:1fr; } .project-mini+.project-mini { border-left:0; padding-left:0; } }
+@media(max-width:560px) { .hero { padding-top:48px; } .hero-grid h1 { font-size:2.75rem; overflow-wrap:anywhere; } .hero-grid .eyebrow { max-width:100%; } .project-index { gap:8px 20px; } .project-info h3 { font-size:1.9rem; } .image-action { font-size:.68rem; bottom:10px; left:10px; } .project-block { padding:48px 0; gap:24px; } .feature-links { flex-wrap:wrap; } .nav-inner { gap:8px; } .logo { font-size:1.35rem; } .lang-btn { min-width:30px; } .nav-controls { gap:6px; } }
+@media(prefers-reduced-motion:reduce) { *, *::before, *::after { animation:none!important; transition:none!important; scroll-behavior:auto!important; } }
+/* Keep active controls legible in the light palette. */
+html[data-theme="light"] .nav-links a.active,
+html[data-theme="light"] .eyebrow,
+html[data-theme="light"] .section-tag,
+html[data-theme="light"] .num,
+html[data-theme="light"] .logo span { color:var(--claret); }
+html[data-theme="light"] .nav-links a.active::after { background:var(--claret); }
+html[data-theme="light"] .lang-btn.active { color:var(--claret-darkest); }
+.project-info h2 { font-family:var(--serif); font-size:2.2rem; margin-bottom:18px; line-height:1.15; }
+@media(max-width:560px) { .project-info h2 { font-size:1.9rem; } }

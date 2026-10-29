@@ -3,16 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Yasmina — Software Developer</title>
-<meta name="description" content="Backend & AI engineer. FastAPI · RAG · Python. Building production-ready systems.">
+<title>Yasmina — Backend Developer</title>
+<meta name="description" content="Backend developer. Python, FastAPI, ASP.NET Core and AI integrations. Chatra, AI Mentor and RugPull: source code and real project screenshots.">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="enhancements.css">
 </head>
 <body>
+<a class="skip-link" href="#main-content" data-i18n="skip_content">К содержимому</a>
 
 <nav class="navbar">
   <div class="nav-inner">
     <a href="index.html" class="logo">Yasmina<span>.</span></a>
-    <ul class="nav-links">
+    <ul class="nav-links" id="primary-navigation">
       <li><a href="index.html" class="active" data-i18n="nav_home">Home</a></li>
       <li><a href="about.html" data-i18n="nav_about">About</a></li>
       <li><a href="projects.html" data-i18n="nav_projects">Projects</a></li>
@@ -31,12 +33,12 @@
       </div>
     </div>
     <a href="contact.html" class="nav-cta" data-i18n="nav_cta">Say hello</a>
-    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="primary-navigation"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
-<header class="hero">
-  <div class="container">
+<main id="main-content"><header class="hero">
+  <div class="container hero-grid"><div class="hero-copy">
     <div class="eyebrow"><span class="dot"></span> <span data-i18n="hero_badge">Available for opportunities · Kazakhstan</span></div>
     <h1><span data-i18n="hero_title_1">Backend &amp; AI engineer</span><br><span data-i18n="hero_title_2">building</span> <span class="accent" data-i18n="hero_title_3">intelligent</span> <span data-i18n="hero_title_4">systems.</span></h1>
     <p class="lede" data-i18n="hero_lede">I design and ship production-ready backends — FastAPI APIs, RAG pipelines, and the infrastructure that holds them together.</p>
@@ -44,7 +46,7 @@
       <a href="projects.html" class="btn btn-primary" data-i18n="hero_btn_projects">View Projects →</a>
       <a href="about.html" class="btn btn-ghost" data-i18n="hero_btn_about">About Me</a>
     </div>
-  </div>
+  </div><div class="hero-preview reveal"><a href="projects.html#ai-mentor"><img src="assets/mentor-cover.jpg" width="1586" height="992" alt="AI Mentor" fetchpriority="high"><span><small data-i18n="new_project">В портфолио</small><strong>AI Mentor</strong><b aria-hidden="true">↗</b></span></a></div></div>
 
   <div class="marquee">
     <div class="marquee-track">
@@ -84,23 +86,20 @@
 <section>
   <div class="container">
     <div class="feature">
-      <div class="feature-visual">
-        <span class="tag-pill" data-i18n="featured_tag">Featured Project</span>
-        <h3>Chatra</h3>
-        <div class="stack-row">
-          <span class="chip">FastAPI</span>
-          <span class="chip">RAG</span>
-          <span class="chip">PostgreSQL</span>
-          <span class="chip">Docker</span>
-        </div>
-      </div>
+      <figure class="project-media reveal">
+  <a class="project-cover" href="assets/chatra-screen.jpg" data-preview data-preview-title="Chatra">
+    <img src="assets/chatra-cover.jpg" alt="Chatra — обложка на основе настоящего скриншота" data-i18n-attr="alt:chatra_alt" loading="lazy" width="1586" height="992">
+    <span class="image-action" data-i18n="view_screen">Открыть скриншот ↗</span>
+  </a>
+  <figcaption data-i18n="cover_note">AI-обложка из реального скриншота · оригинал по нажатию</figcaption>
+ </figure>
       <div class="feature-text">
         <span class="section-tag" data-i18n="featured_tag">Featured</span>
         <h2 data-i18n="featured_title">An educational platform with a retrieval-augmented backend.</h2>
         <p data-i18n="featured_text">Chatra's FastAPI backend powers class management, assignments, and progress tracking — with a RAG pipeline in progress to make course content searchable and queryable.</p>
         <div class="feature-links">
           <a href="https://chatra.aican.cloud/" class="btn btn-primary" data-i18n="featured_btn_demo" target="_blank" rel="noopener">Live Demo →</a>
-          <a href="https://github.com/yasmina777-kz/chatra-backend" class="btn btn-ghost" data-i18n="featured_btn_github">GitHub</a>
+          <a href="https://github.com/yasmina777-kz/chatra-with-avatar-B" class="btn btn-ghost" data-i18n="featured_btn_github">GitHub</a>
         </div>
       </div>
     </div>
@@ -120,16 +119,11 @@
   </div>
 </section>
 
-<section>
-  <div class="container">
-    <div class="stats">
-      <div class="stat"><span class="stat-num" data-i18n="stat1_num">2</span><span class="stat-label" data-i18n="stat1_label">Shipped projects</span></div>
-      <div class="stat"><span class="stat-num" data-i18n="stat2_num">2</span><span class="stat-label" data-i18n="stat2_label">Core technologies</span></div>
-      <div class="stat"><span class="stat-num" data-i18n="stat3_num">100%</span><span class="stat-label" data-i18n="stat3_label">Self-driven builds</span></div>
-      <div class="stat"><span class="stat-num" data-i18n="stat4_num">∞</span><span class="stat-label" data-i18n="stat4_label">Curiosity</span></div>
-    </div>
-  </div>
-</section>
+<section class="project-directory"><div class="container"><div class="section-head"><h2 data-i18n="all_projects">Три проекта. Разные задачи.</h2><a href="projects.html" class="text-link" data-i18n="project_details">Все подробности ↗</a></div><div class="project-mini-grid">
+<a class="project-mini reveal" href="projects.html#chatra"><span>01 / FastAPI · Nuxt</span><h3>Chatra</h3><p data-i18n="mini_chatra">Классы, материалы, задания и RAG.</p><b aria-hidden="true">↗</b></a>
+<a class="project-mini reveal" href="projects.html#ai-mentor"><span>02 / ASP.NET Core · React</span><h3>AI Mentor</h3><p data-i18n="mini_mentor">Лекции, вопросы и практика.</p><b aria-hidden="true">↗</b></a>
+<a class="project-mini reveal" href="projects.html#rugpull"><span>03 / FastAPI · Nuxt</span><h3>RugPull</h3><p data-i18n="mini_rugpull">Анализ токенов и кошельков.</p><b aria-hidden="true">↗</b></a>
+</div></div></section>
 
 <section>
   <div class="container">
@@ -144,6 +138,7 @@
   </div>
 </section>
 
+</main>
 <footer>
   <div class="container">
     <div class="footer-grid">
@@ -164,7 +159,7 @@
         <a href="mailto:yasmin.yuldasheva@icloud.com" data-i18n="footer_email_link">Email</a>
         <a href="https://chatra.aican.cloud/" target="_blank" rel="noopener" data-i18n="footer_demo_link">Live Demo</a>
         <a href="https://github.com/yasmina777-kz">GitHub</a>
-        <a href="https://github.com/yasmina777-kz/chatra-backend" data-i18n="footer_chatra_link">Chatra Backend</a>
+        <a href="https://github.com/yasmina777-kz/chatra-with-avatar-B" data-i18n="footer_chatra_link">Chatra Backend</a>
       </div>
     </div>
     <div class="footer-bottom">
@@ -175,6 +170,8 @@
 </footer>
 
 <script src="i18n.js"></script>
+<script src="project-content.js"></script>
 <script src="script.js"></script>
+<script src="interactions.js"></script>
 </body>
 </html>
