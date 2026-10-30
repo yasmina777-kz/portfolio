@@ -31,7 +31,21 @@ Open <http://localhost:8080>. On Windows, use `py -m http.server 8080 --bind 127
 
 ## Editing
 
-Update the relevant HTML page for content, `styles.css` for appearance, and `i18n.js` for translated text. Keep the three language versions consistent.
+Update the relevant HTML page for structure and fallback text. Use `styles.css` for the base appearance and `enhancements.css` for the project gallery and motion.
+
+### Updating translated text
+
+Text with `data-i18n` is replaced when the page loads or the language changes. Editing only the text inside the HTML element will not change what visitors see with JavaScript enabled.
+
+The scripts load in this order: `i18n.js`, `project-content.js`, `script.js`, then `interactions.js`. `project-content.js` merges its values into the base dictionary and **overrides matching keys in `i18n.js`**. Keep this order on every page.
+
+1. Find the element's translation key, such as `hero_lede` or `mentor_text`.
+2. If the key exists in `project-content.js`, update it there; otherwise update it in `i18n.js`. For example, changing `hero_lede` only in `i18n.js` has no visible effect because the project dictionary overrides it.
+3. Update all three dictionary entries: `ru`, `kz` and `en`. The dictionary uses `kz`; the rendered document uses the HTML language code `kk` for Kazakh.
+4. Keep the HTML fallback text meaningful. For translated attributes such as image descriptions, use `data-i18n-attr="alt:translation_key"` and add the key in all three languages.
+5. Preview locally, switch through RU / KZ / EN, and reload. The last selected language is remembered, so a reload alone does not check all translations. Check both the home page and project page when a key is shared.
+
+Translation strings can contain HTML and are inserted with `innerHTML`; keep them as trusted, repository-maintained copy rather than user input.
 
 Before publishing, check navigation between all five pages, the RU/KZ/EN switcher, mobile layout and project/contact links.
 
