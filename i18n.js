@@ -19,6 +19,10 @@ const TRANSLATIONS = {
     hero_lede: "Я проектирую и собираю надёжные backend-системы — API на FastAPI, RAG-пайплайны и инфраструктуру, которая держит всё это вместе.",
     hero_btn_projects: "Смотреть проекты →",
     hero_btn_about: "Обо мне",
+    hero_namecard_aria: "Ясмина — backend-разработчик из Казахстана",
+    hero_namecard_label: "ПОРТФОЛИО · 2026",
+    hero_namecard_role: "Backend-разработчик",
+    hero_namecard_stack: "Python · FastAPI · AI",
 
     build_tag: "Возможности",
     build_title_1: "Что я",
@@ -180,6 +184,10 @@ const TRANSLATIONS = {
     hero_lede: "Мен сенімді backend жүйелерін құрастырамын — FastAPI API, RAG-пайплайндар және оларды біріктіретін инфрақұрылым.",
     hero_btn_projects: "Жобаларды көру →",
     hero_btn_about: "Мен туралы",
+    hero_namecard_aria: "Ясмина — Қазақстаннан шыққан backend-әзірлеуші",
+    hero_namecard_label: "ПОРТФОЛИО · 2026",
+    hero_namecard_role: "Backend-әзірлеуші",
+    hero_namecard_stack: "Python · FastAPI · AI",
 
     build_tag: "Мүмкіндіктер",
     build_title_1: "Мен не",
@@ -337,6 +345,10 @@ const TRANSLATIONS = {
     hero_lede: "I design and build reliable backends — FastAPI APIs, RAG pipelines, and the infrastructure that holds them together.",
     hero_btn_projects: "View Projects →",
     hero_btn_about: "About Me",
+    hero_namecard_aria: "Yasmina — backend developer from Kazakhstan",
+    hero_namecard_label: "PORTFOLIO · 2026",
+    hero_namecard_role: "Backend developer",
+    hero_namecard_stack: "Python · FastAPI · AI",
 
     build_tag: "Capabilities",
     build_title_1: "What I",
